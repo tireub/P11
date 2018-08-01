@@ -1,0 +1,15 @@
+gwwwwwwbwwwwwbw
+bbwbbbwbwbbbwbw
+wbwbwwwbwbwwwbw
+wbwbbbwwwbwbwww
+wbwwwbwbwbbbbbb
+wbbbwbwbwwbwwww
+wwwwwbwbbwbwbwb
+bbbwbbbbwwbwbwb
+wwwwwbwwwbbwbww
+wbbbwbwbbbbwbbw
+wbwwwwwwwwbwwbw
+wbbwbbbbbwbbwbw
+wwbwwwbwbwwbwbw
+bbbwbwwwbbwwwbw
+wwwwbwbbbwwbwbr
