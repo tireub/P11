@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 from Classes import *
+from Levelgen import randmaze
 
 '''
 MAIN
@@ -31,7 +32,7 @@ victory_sound = pygame.mixer.Sound("Sound/victory.wav")
 
 #Create the level
 level = Labyrinth('Level1')
-level.create()
+level.generate()
 
 #display the level
 level.display(level, window)

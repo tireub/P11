@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 import random
+from Levelgen import randmaze
 
 #Definition of Labyrinth
 class Labyrinth:
@@ -13,6 +14,21 @@ class Labyrinth:
         self.grid = []
         self.char_init_pos = (0, 0)
         self.char_init_sprite = (0, 0)
+
+#def generate random level
+    def generate(self):
+        (grid, start, finish) = randmaze()
+        for line in grid:
+            grid_line = []
+            for sprite in line:
+                if sprite == 0:
+                    grid_line.append("b")
+                else:
+                    grid_line.append("w")
+            self.grid.append(grid_line)
+
+        self.grid[start[1]][start[0]] = "g"
+        self.grid[finish[1]][finish[0]] = "r"
 
 
 #def Read the file Level1 to import the level structure
