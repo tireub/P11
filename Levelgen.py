@@ -1,7 +1,8 @@
 import numpy
 from numpy.random import random_integers as random
 
-def randmaze(width=15, height=15):
+
+def randmaze(width=29, height=29):
     # Initialize grid, all 0
     Grid = numpy.zeros((height, width), dtype=bool)
     elements = int((width // 2 + 1) * (height // 2 + 1))
@@ -9,13 +10,13 @@ def randmaze(width=15, height=15):
     # Only the cells with even coordinates are to be visited
 
     # Find a starting point
-    x, y = random(0, width // 2) * 2, random(0, height // 2) *2
+    x, y = random(0, width // 2) * 2, random(0, height // 2) * 2
     # Switch it to 1
 
     visited = []
     stack = []
     Grid[x, y] = 1
-    visited.append((x,y))
+    visited.append((x, y))
 
     while len(visited) < elements:
         neighbours = []
@@ -33,7 +34,7 @@ def randmaze(width=15, height=15):
             if not (Grid[x, y + 2]):
                 neighbours.append((x, y + 2))
 
-        #if the cell has any unvisited neighbours
+        # if the cell has any unvisited neighbours
         if len(neighbours):
             # choose one of them randomly
             u, v = neighbours[random(0, len(neighbours) - 1)]
@@ -61,5 +62,3 @@ def randmaze(width=15, height=15):
     finish = visited[-1]
 
     return (Grid, start, finish)
-
-

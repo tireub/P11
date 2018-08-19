@@ -1,0 +1,26 @@
+# Generation of level
+
+grid of blanks (15*15)
+read grid table (29*29)
+
+# read even lines:
+for line in grid[::2]
+    # read odd element:
+    for wall in line[1::2]:
+        if wall == 0:
+            window.blit(verticalwall, (x, y))
+        # add wall if needed
+
+# read even collumns:
+for collumn in [1::2]
+    # read odd elements
+    for wall in collumn[::2]:
+        window.blit(horizontalwall, (x, y))
+        # add wall if needed
+
+
+
+# Movement
+    test stays the same (neighbour sprite of the grid)
+    if allowed movement is the same
+    new sprite is two away
