@@ -146,6 +146,8 @@ while loop:
             loop = 0
         if event.type == KEYDOWN:
             if event.key == K_ESCAPE:
+
+
                 loop = 0
 
     pygame.display.flip()
